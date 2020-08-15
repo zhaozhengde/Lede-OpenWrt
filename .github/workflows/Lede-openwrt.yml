@@ -46,8 +46,8 @@ env:
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
-  UPLOAD_REALEASE: true
-  UPLOAD_WETRANSFER: false
+  UPLOAD_REALEASE: false
+  UPLOAD_WETRANSFER: true
   TZ: Asia/Shanghai
 
 jobs:
