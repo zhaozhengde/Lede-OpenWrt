@@ -21,7 +21,6 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default  #使用源码自带ShadowS
 
 # Add a feed source增加默认源地址
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git luci https://github.com/Lienol/openwrt-luci' feeds.conf.default
 
 
 
@@ -36,6 +35,7 @@ git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverc
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
 git clone https://github.com/Lienol/openwrt-luci/luci-theme-bootstrap-mod
 git clone https://github.com/Lienol/openwrt-luci/luci-theme-bootstrap-blue
+git clone https://github.com/Lienol/openwrt-luci/luci-theme-argon-dark-mod
 
 #passwall出国软件
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/luci-app-passwall
