@@ -33,9 +33,9 @@ git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-
 git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash  #clash出国软件
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan  #微信推送
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
-git clone https://github.com/Lienol/openwrt-luci/luci-theme-bootstrap-mod
-git clone https://github.com/Lienol/openwrt-luci/luci-theme-bootstrap-blue
-git clone https://github.com/Lienol/openwrt-luci/luci-theme-argon-dark-mod
+git clone https://github.com/Lienol/openwrt-luci/tree/dev-18.06/themes/luci-theme-bootstrap-mod package/luci-theme-bootstrap-mod
+git clone https://github.com/Lienol/openwrt-luci/tree/dev-18.06/themes/luci-theme-bootstrap-blue package/luci-theme-bootstrap-blue
+git clone https://github.com/Lienol/openwrt-luci/tree/dev-18.06/themes/luci-theme-argon-dark-mod package/luci-theme-argon-dark-mod
 
 #passwall出国软件
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/luci-app-passwall
