@@ -12,8 +12,8 @@ sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_gener
 
 
 #修改版本内核（下面两行代码前面有#为源码默认最新5.4内核,没#为4.19内核,默认修改X86的，其他机型L大那里target/linux查看，对应修改下面的路径就好）
-#sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' ./target/linux/x86/Makefile  #修改内核版本
-#sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' ./target/linux/x86/Makefile  #修改内核版本
+sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' ./target/linux/x86/Makefile  #修改内核版本
+sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' ./target/linux/x86/Makefile  #修改内核版本
 
 
 #取消掉feeds.conf.default文件里面的helloworld的#注释
@@ -33,9 +33,7 @@ git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-
 git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash  #clash出国软件
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan  #微信推送
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns DNS加速
-git clone https://github.com/Lienol/openwrt-luci/tree/dev-18.06/themes/luci-theme-bootstrap-mod package/luci-theme-bootstrap-mod
-git clone https://github.com/Lienol/openwrt-luci/tree/dev-18.06/themes/luci-theme-bootstrap-blue package/luci-theme-bootstrap-blue
-git clone https://github.com/Lienol/openwrt-luci/tree/dev-18.06/themes/luci-theme-argon-dark-mod package/luci-theme-argon-dark-mod
+
 
 #passwall出国软件
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/luci-app-passwall
