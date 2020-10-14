@@ -13,8 +13,7 @@ sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_gener
 # 修改主机名字，把XiaomiR3G修改你喜欢的就行（不能纯数字或者使用中文）
 sed -i 's/OpenWrt/XiaomiR3G/g' ./package/base-files/files/bin/config_generate
 
-# 内核显示增加自己个性名称（wx611975 build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些为后期增加）
-sed -i "s/OpenWrt /wx611975 build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/default-settings/files/zzz-default-settings
+
 
 # 替换https-dns-proxy.init文件,解决用LEDE源码加入passwall编译固件后DNS转发127.0.0.1#5053和12.0.0.1#5054问题
 curl -fsSL  https://raw.githubusercontent.com/Lienol/openwrt-packages/19.07/net/https-dns-proxy/files/https-dns-proxy.init > feeds/packages/net/https-dns-proxy/files/https-dns-proxy.init
