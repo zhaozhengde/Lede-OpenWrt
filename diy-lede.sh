@@ -29,6 +29,8 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default  #使用源码自带ShadowS
 
 sed -i 's/"网络存储"/"存储"/g' package/lean/luci-app-vsftpd/po/zh-cn/vsftpd.po
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/lean/luci-app-sfe/po/zh-cn/sfe.po
+sed -i 's/"Web 管理"/"管理"/g' package/lean/luci-app-webadmin/po/zh-cn/webadmin.po
+sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
 
 
 # Add a feed source增加默认源地址
